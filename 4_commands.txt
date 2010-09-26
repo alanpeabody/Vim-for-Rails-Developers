@@ -1,0 +1,22 @@
+Basic commands accessed via :
+  - :q quit/close current window/tab/split
+  - :w write/save file
+  - :wq write and quit
+  - :w filename.txt write file as filename.txt
+  - :edit filename.txt open filename.txt for editing (can create files this way)
+  - :pwd returns your present working directory
+  - :ls lists all open buffers
+  - :bp previous buffer
+  - :bn next buffer
+  - :bl last buffer
+  - :bf first buffer
+  - :bn (when n is a number) opens buffer n (find via :ls or by minibuff explorer)
+  - :n goto line n
+
+Window Management (GVim/MacVim only for tabs)
+  - :tabnew filename.txt opens filename.txt in new tab
+  - :tab(next|previous|first|last)
+  - Ctrl-W s split window
+  - Ctrl-W v split window vertically
+  - More on splits in Rails section.
+
