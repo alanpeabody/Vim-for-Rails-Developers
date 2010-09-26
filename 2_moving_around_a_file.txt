@@ -1,0 +1,47 @@
+Movement in Normal Mode
+
+Tips:
+  - Don't need and should not use your mouse.
+  - Don't need and should not use the arrow keys.*
+  - Try to stay on the home row as much as possible.
+  - Don't stay in insert mode for longer then it takes to make one insert.
+  - Every few days try to learn and use a new command as much as possible.
+  - Map the Caps lock key to be a second Escape. It is the most worthless key on the keyboard and you wont miss it.
+
+Basic Movement:
+  - h move one character left.
+  - l move one character right.
+  - j move one line down.
+  - k move one line up.
+
+Intermediate Movement:
+  - w move one word forward.
+  - W move one word, including punctuation forward.
+  - b move one work back.
+  - B move one word, including punctuation back.
+  - e move to end of word.
+  - E move to end of word, including punctuation.
+  - 0 beginning of line.
+  - ^ first non-blank character of line.
+  - $ end of line.
+
+Advanced Movement
+  - Movement by "structure"
+    - () and {} can both be used to navigate by structure. In ruby they can help you move by method.
+  - Searching
+    - Pattern Matching/regex
+      - /regex moves forward to start of matched string.
+      - ?regex moves backward to start of matched string.
+      - n repeat last search in same direction.
+      - N repeat last search in opposite direction.
+    - Current line find by character
+      - fx move cursor to next occurrence of x in current line
+      - Fx move cursor to previous occurrence of x in current line
+      - tx move cursor to character before next occurrence of x in current line
+      - Tx move cursor to character after previous occurrence of x in current line
+      - ; Repeat last find in the same direction.
+      - , Repeat last find in opposite direction.
+
+Other helpful fo-movement commands:
+  - o insert blank line after current line and start insert mode there.
+  - O insert black line before current line and start insert mode there.

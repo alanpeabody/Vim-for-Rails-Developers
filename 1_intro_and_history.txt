@@ -1,6 +1,6 @@
 VIM: The Ruby of Text Editing
 
-What vim is:
+What Vim is:
   - Powerful
   - Smart
   - Lightweight (< 10mb memory)
@@ -10,7 +10,7 @@ What vim is:
   - What all the Rails cool kids use now.
   - A tool to increase your programming speed.
 
-What vim isnt:
+What Vim isn't:
   - Easy to learn
   - Good for novices
   - Pre-Configured
@@ -23,8 +23,8 @@ Differences from Textmate:
   - Vim is must be learned, Textmate must be memorized.
   - Vim is not preconfigured, Textmate "Just works".
   - Vim is available on all OS (including Windows), Textmate is OSX only.
-  - Vim has 30 years of history behind it and probibly 30 more ahead. Textmate has 6 years of history, and has not been updated for the last 4.
-  - Vim is opensource, Textmate is proprietary.
+  - Vim has 30 years of history behind it and probably 30 more ahead. Textmate has 6 years of history, and has not been updated for the last 4.
+  - Vim is open source, Textmate is proprietary.
   - Vim is not ideal for a novice, Textmate is a great editor for novices.
 
 About GVim, MacVim, Vim, Vi, EX, etc.
@@ -61,6 +61,6 @@ Modal Editing
     - In Gvim you can make selections with the mouse to enter Visual mode.
     - Last line will say -- VISUAL -- or -- VISUAL LINE -- or -- VISUAL BLOCK -- when you are in them.
   - Command line
-    - Can only be entered by typeing a colen : when in normal mode.
+    - Can only be entered by typing a colon : when in normal mode.
     - Is used for saving, opening and navigating files.
     - Also used for search, search/replace, etc.
