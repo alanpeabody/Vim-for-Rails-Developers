@@ -1,0 +1,55 @@
+Manipulating text:
+
+Insertion Commands:
+  - These all leave you in insert mode
+  - i insert before current character
+  - I insert at beginning of line
+  - a append after current character
+  - A append at end of line
+  - o insert blank line below current line and enter insert mode in it.
+  - O insert blank line above current line and enter insert mode in it.
+
+Copy/Paste Commands:
+  - x delete character under cursor
+  - y yank(copy)
+  - p paste
+  - d delete(cut)
+  - yy yank line
+  - dd delete line
+
+Undo/Redo
+  - u undo
+  - Ctrl-r redo
+
+Replacing/Substitution/Changing
+  - s substitute character(s)
+  - S substitute line (Deletes current line and puts you in insert mode at beginning)
+  - r replace character
+  - R replace line (Puts you in replace/overwrite mode for rest of the line)
+  - ~ Change case
+  - c change (deletes and puts you in insert mode)
+  - C Change to end of line
+
+Putting it all together:
+  - movement + manipulation = power
+  - You can combine your manipulation commands (verbs) with your movement commands(nouns) to quickly edit text.
+  - In addition you can use additional modifiers (adjectives) to further refine your commands.
+
+Examples:
+
+Yank(copy) 4 characters right: y4l
+Yank 2 characters left: y2h
+
+Delete (from cursor) to end of a word: dw
+Delete entire word: diw (iw == inside word, i is a modifier)
+Delete two words: d2w
+Delete two entire words: d2iw
+Delete to the end of the line: d$
+Delete two words back: d2b
+
+Change entire word: ciw
+Change inside (a set of parenthesis): ci) (or ] or } or ' or ")
+Change upto (and including) }: cf}
+Change upto (excluding) ": ct"
+
+And the possibilities go on...

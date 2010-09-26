@@ -41,7 +41,3 @@ Advanced Movement
       - Tx move cursor to character after previous occurrence of x in current line
       - ; Repeat last find in the same direction.
       - , Repeat last find in opposite direction.
-
-Other helpful fo-movement commands:
-  - o insert blank line after current line and start insert mode there.
-  - O insert black line before current line and start insert mode there.
