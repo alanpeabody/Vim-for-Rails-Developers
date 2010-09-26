@@ -1,0 +1,66 @@
+VIM: The Ruby of Text Editing
+
+What vim is:
+  - Powerful
+  - Smart
+  - Lightweight (< 10mb memory)
+  - Configurable
+  - A modal editor
+  - Universal
+  - What all the Rails cool kids use now.
+  - A tool to increase your programming speed.
+
+What vim isnt:
+  - Easy to learn
+  - Good for novices
+  - Pre-Configured
+  - "It just works"
+  - A hot new trend
+
+Differences from Textmate:
+  - Vim is about commands, Textmate about shortcuts.
+  - Vim is modal, Textmate is always in insert mode.
+  - Vim is must be learned, Textmate must be memorized.
+  - Vim is not preconfigured, Textmate "Just works".
+  - Vim is available on all OS (including Windows), Textmate is OSX only.
+  - Vim has 30 years of history behind it and probibly 30 more ahead. Textmate has 6 years of history, and has not been updated for the last 4.
+  - Vim is opensource, Textmate is proprietary.
+  - Vim is not ideal for a novice, Textmate is a great editor for novices.
+
+About GVim, MacVim, Vim, Vi, EX, etc.
+
+  - Vi is thirty years old.
+  - Installed by default on every *nix os.
+  - Vi and its brood are Screen editors, the only kind of editor we are used to.
+  - Ex is now part of Vi, was/is a Line editor.
+    - Understanding Ex gives you insight into Vi/Vim.
+    - Ex was used before displays, when everything was printed.
+    - You gave it a line number and an operation and it executed it and printed the result.
+    - Used for many Vim commands today.
+
+Modal Editing
+  - There are very few modal editors, with Vim the most popular.
+  - Based on the idea that most of the time you are editing/changing/refactoring text, not creating it for the first time.
+  - Vim has 4 primary modes: Insert, Normal, Visual, Command Line.
+  - Insert
+    - What most people are used to, any letter you type is added to the document.
+    - Lots of ways to get into insert mode.
+    - In GVim when in insert mode your cursor looks like: |
+    - It all Vi clones when in insert mode you will see -- INSERT -- in the last line of your editor.
+  - Normal
+    - The is the mode Vim puts you in by default.
+    - Can be entered by hitting escape from any mode.
+    - The more you get used to vim the more time you spend in normal mode.
+    - Used for moving around the document and manipulating text.
+  - Visual
+    - Allows you to select and manipulate blocks of text.
+    - Has two 'sub modes' line and block.
+    - Visual is accessed from normal by pressing v.
+    - Visual line can be accessed by V (shift-v).
+    - Visual block can be accessed by Ctrl-v
+    - In Gvim you can make selections with the mouse to enter Visual mode.
+    - Last line will say -- VISUAL -- or -- VISUAL LINE -- or -- VISUAL BLOCK -- when you are in them.
+  - Command line
+    - Can only be entered by typeing a colen : when in normal mode.
+    - Is used for saving, opening and navigating files.
+    - Also used for search, search/replace, etc.
