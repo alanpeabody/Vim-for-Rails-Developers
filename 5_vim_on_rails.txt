@@ -1,0 +1,70 @@
+Vim on Rails
+
+To fully get the most out of using Vim with Rails I recommend the following plug-ins:
+
+Rails.vim
+  - By the amazing Tim Pope
+  - If you use nothing else use this.
+  - Syntax Highlighting
+  - Auto sets indentation to two spaces
+  - All Rails.vim commands start with :R
+  - Easy access to rails script/* commands
+    - :Rgenerate (migration/model/rspec_model/controller/etc)
+    - :Rscript (console)
+    - :Rrake (task, defaults to running test/spec of current file)
+  - Provides many navigational commands:
+    - :Redit filename.rb - extends vims edit command with tab completion and rails awareness.
+    - :Rmodel ModelName or model_name
+    - :Rcontroller controller_name
+    - :Rview path/filename (context sensitive, if you are already editing a view or controller show.html.erb will be of that same controller)
+    - :Rlayout name (defaults to application)
+    - :Runittest - opens the unittest (Test::Unit or RSpec) for the current model. Can pass model name as param
+    - :Rhelper name
+    - :Rspec name
+    - :Rfind string - Similar to Textmates fuzzy finder (but I find the other navigation commands much more useful)
+    - And 10 or so more, check the help to find them out.
+    - No param is needed when working with one particular model.
+    - All navigation commands have 4 versions:
+      - :R[command] opens in current tab/window/split
+      - :RT[command] opens in a new tab
+      - :RV[command] opens in a vertical split
+      - :RS[command] opens in a horizontal split
+    - The exception to the :R rule are the commands Alternate and Related:
+      - :R (and :RV, :RT, :RS) open the related file. This differs depending on what file you are in. In controller it is the helper, in views teh controller.
+      - :A (and :AV, :AT, :AS) opens the alternate file. This is most often the test or spec.
+    - Goto file:
+      - When in normal mode you can place your cursor on many different things and type gf.
+      - In a controller on an action name -> view
+      - On a path helper (my_models_path()) -> the correct action in the correct controller (it reads your routes.rb)
+      - On an instance variables with the same name as your model (@model_name) -> the models class file.
+      - On relationship definitions -> the model it is targeting
+      - On a stylesheet/javascript link -> the js/stylesheet it is targeting
+      - On a layout :name in a controller -> the layout of that name
+      - and more.... 
+ 
+
+Surrounds.vim
+  - Adds the ability to delete, change, and add 'surroundings' to text: (){}[]''"", even xml & html!
+
+Supertab
+  - Super smart auto completion (uses tab key)
+
+Ack.vim
+  - Integration with way better then grep ack searching utility.
+
+NerdTree
+  - Enhanced tree/filesystem explorer.
+
+Fugitive
+  - Git functionality without leaving vim.
+
+VividChalk
+  - Vim color scheme specifically designed for Ruby and Rails use.
+
+Also popular, but not my style:
+
+Snipmate
+  - Provides textmate inspired snippets. Comes with a few but there is a huge library of snippets for ruby/rails/js/css out there.
+
+Minibufexpl
+  - Displays all your buffers as pho tabs.
